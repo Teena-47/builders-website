@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+
+{% block title %}Sterling Builders | Home{% endblock %}
+
+{% block content %}
+
+<!-- HERO SECTION -->
+<section class="hero d-flex align-items-center text-center text-white">
+    <div class="container">
+        <h1 class="display-4 fw-bold">Building Tomorrow, Today</h1>
+        <p class="lead mb-4">Trusted construction partners for residential, commercial &amp; infrastructure projects across India.</p>
+        <a href="{{ url_for('contact') }}" class="btn btn-lg btn-warning fw-bold">Get a Quote</a>
+    </div>
+</section>
+
+<!-- INTRO STRIP -->
+<section class="py-5 text-center">
+    <div class="container">
+        <h2 class="fw-bold mb-3">20+ Years of Building Excellence</h2>
+        <p class="text-muted col-lg-8 mx-auto">
+            From residential towers to civic infrastructure, Sterling Builders delivers projects
+            on time, on budget, and built to last. Explore some of our recent work below.
+        </p>
+    </div>
+</section>
+
+<!-- PREVIOUS PROJECTS - AUTO SCROLLING CAROUSEL -->
+<section class="py-5 projects-section">
+    <div class="container">
+        <h2 class="fw-bold text-center mb-5">Previous Projects</h2>
+
+        <div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
+                {% for project in projects %}
+                <div class="carousel-item {% if loop.first %}active{% endif %}">
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+                            <a href="{{ url_for('project_detail', project_id=project.id) }}" class="project-card-link">
+                                <div class="card project-card">
+                                    <img src="{{ project.thumbnail }}" class="card-img-top" alt="{{ project.title }}">
+                                    <div class="card-body text-center">
+                                        <span class="badge bg-warning text-dark mb-2">{{ project.category }}</span>
+                                        <h5 class="card-title fw-bold">{{ project.title }}</h5>
+                                        <p class="card-text text-muted">{{ project.short_description }}</p>
+                                        <span class="btn btn-outline-dark btn-sm">View Full Project</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+        <!-- All projects as a grid too, for quick access -->
+        <div class="row mt-5 g-4">
+            {% for project in projects %}
+            <div class="col-md-4">
+                <a href="{{ url_for('project_detail', project_id=project.id) }}" class="project-card-link">
+                    <div class="card project-card h-100">
+                        <img src="{{ project.thumbnail }}" class="card-img-top" alt="{{ project.title }}">
+                        <div class="card-body">
+                            <span class="badge bg-warning text-dark mb-2">{{ project.category }}</span>
+                            <h6 class="card-title fw-bold">{{ project.title }}</h6>
+                            <p class="card-text text-muted small">{{ project.location }}</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "title": "Skyline Residency",
+    "category": "Residential",
+    "location": "Bengaluru, Karnataka",
+    "client": "Skyline Developers Pvt Ltd",
+    "duration": "14 months",
+    "year": "2024",
+    "thumbnail": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=600",
+    "image": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200",
+    "short_description": "A 12-storey modern residential complex with 96 premium apartments.",
+    "full_description": "Skyline Residency is a 12-storey residential tower featuring 96 premium 2 and 3 BHK apartments. The project focused on earthquake-resistant structural design, energy-efficient glazing, and a rooftop community garden. Our team handled everything from foundation to interior finishing, delivering the project two weeks ahead of schedule."
+  },
+  {
+    "id": 2,
+    "title": "Greenfield Corporate Park",
+    "category": "Commercial",
+    "location": "Pune, Maharashtra",
+    "client": "Greenfield Enterprises",
+    "duration": "20 months",
+    "year": "2023",
+    "thumbnail": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600",
+    "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200",
+    "short_description": "A LEED-certified 5-building office campus for 3,000+ employees.",
+    "full_description": "Greenfield Corporate Park is a five-building commercial campus designed for sustainability and employee wellbeing. The project includes solar rooftop panels, rainwater harvesting, open-plan collaborative floors, and a central amphitheater. We managed civil construction, MEP works, and landscaping across a 6-acre site."
+  },
+  {
+    "id": 3,
+    "title": "Riverside Bridge Renovation",
+    "category": "Infrastructure",
+    "location": "Ahmedabad, Gujarat",
+    "client": "Municipal Corporation",
+    "duration": "9 months",
+    "year": "2023",
+    "thumbnail": "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600",
+    "image": "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1200",
+    "short_description": "Structural reinforcement and widening of a 40-year-old river bridge.",
+    "full_description": "This civil infrastructure project involved reinforcing the aging structural columns of a 40-year-old bridge, widening it from 2 lanes to 4, and adding pedestrian walkways with LED safety lighting. Work was carried out in phases to keep the bridge partially operational throughout construction, minimizing disruption to daily commuters."
+  },
+  {
+    "id": 4,
+    "title": "Hilltop Villas",
+    "category": "Residential",
+    "location": "Lonavala, Maharashtra",
+    "client": "Private Client Group",
+    "duration": "11 months",
+    "year": "2022",
+    "thumbnail": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600",
+    "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200",
+    "short_description": "8 luxury hillside villas with panoramic valley views.",
+    "full_description": "Hilltop Villas is a boutique development of 8 private villas built into a hillside, each designed to maximize valley views while withstanding monsoon runoff. Features include natural stone facades, infinity-edge pools, and terraced landscaping to prevent soil erosion. Every villa was custom-designed per client preference."
+  },
+  {
+    "id": 5,
+    "title": "Metro Junction Mall",
+    "category": "Commercial",
+    "location": "Hyderabad, Telangana",
+    "client": "Metro Retail Ventures",
+    "duration": "18 months",
+    "year": "2022",
+    "thumbnail": "https://images.unsplash.com/photo-1519567241046-7f570eee3ce6?w=600",
+    "image": "https://images.unsplash.com/photo-1519567241046-7f570eee3ce6?w=1200",
+    "short_description": "A 4-storey retail and entertainment complex spanning 350,000 sq ft.",
+    "full_description": "Metro Junction Mall is a large-scale retail and entertainment destination featuring over 150 stores, a multiplex cinema, and a rooftop food court. The build required close coordination with structural, electrical, HVAC, and fire safety consultants. We delivered a fully compliant, energy-efficient commercial space on time and within budget."
+  }
+]

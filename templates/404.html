@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}Page Not Found | Sterling Builders{% endblock %}
+
+{% block content %}
+<section class="py-5 text-center" style="min-height: 60vh;">
+    <div class="container">
+        <h1 class="display-1 fw-bold text-warning">404</h1>
+        <p class="lead">Sorry, that project or page doesn't exist.</p>
+        <a href="{{ url_for('home') }}" class="btn btn-warning fw-bold mt-3">Back to Home</a>
+    </div>
+</section>
+{% endblock %}

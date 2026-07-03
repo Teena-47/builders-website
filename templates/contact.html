@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block title %}Contact Us | Sterling Builders{% endblock %}
+
+{% block content %}
+
+<section class="page-header text-white text-center d-flex align-items-center">
+    <div class="container">
+        <h1 class="display-5 fw-bold">Get In Touch</h1>
+        <p class="lead">Tell us about your project — we'll get back to you within 24 hours.</p>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-6">
+                {% if message_sent %}
+                <div class="alert alert-success">
+                    <i class="bi bi-check-circle-fill me-2"></i>
+                    Thanks! Your message has been sent. We'll be in touch soon.
+                </div>
+                {% endif %}
+
+                <form method="POST" action="{{ url_for('contact') }}" class="contact-form">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Project Details</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-warning fw-bold">Send Message</button>
+                </form>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="card project-info-card p-4 h-100">
+                    <h4 class="fw-bold mb-4">Contact Information</h4>
+                    <p class="mb-3"><i class="bi bi-geo-alt-fill me-2 text-warning"></i>MG Road, Bengaluru, Karnataka, India</p>
+                    <p class="mb-3"><i class="bi bi-telephone-fill me-2 text-warning"></i>+91 98765 43210</p>
+                    <p class="mb-3"><i class="bi bi-envelope-fill me-2 text-warning"></i>contact@sterlingbuilders.in</p>
+                    <p class="mb-0"><i class="bi bi-clock-fill me-2 text-warning"></i>Mon - Sat: 9:00 AM - 6:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

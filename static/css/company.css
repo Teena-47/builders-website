@@ -1,0 +1,138 @@
+/* ===== COLOR VARIABLES ===== */
+:root {
+    --navy: #0d1b2a;
+    --navy-light: #1b2a3d;
+    --amber: #f4a825;
+    --gray-text: #5c6672;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+    color: #2c2c2c;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    background-color: var(--navy);
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    font-size: 1.4rem;
+}
+
+.nav-link {
+    color: #d9d9d9 !important;
+    margin-left: 1rem;
+    transition: color 0.2s;
+}
+
+.nav-link:hover {
+    color: var(--amber) !important;
+}
+
+/* ===== HERO SECTION (Home) ===== */
+.hero {
+    background: linear-gradient(rgba(13, 27, 42, 0.75), rgba(13, 27, 42, 0.75)),
+        url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1600') center/cover no-repeat;
+    min-height: 70vh;
+}
+
+/* ===== PAGE HEADER (About / Contact) ===== */
+.page-header {
+    background: linear-gradient(rgba(13, 27, 42, 0.8), rgba(13, 27, 42, 0.8)),
+        url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1600') center/cover no-repeat;
+    min-height: 40vh;
+}
+
+/* ===== PROJECT HERO (Project Detail) ===== */
+.project-hero {
+    background-size: cover;
+    background-position: center;
+    min-height: 45vh;
+    position: relative;
+}
+
+.project-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(13, 27, 42, 0.65);
+}
+
+.project-hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* ===== PROJECT CARDS ===== */
+.projects-section {
+    background-color: #f7f7f7;
+}
+
+.project-card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.project-card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.project-card img {
+    height: 220px;
+    object-fit: cover;
+}
+
+/* ===== CAROUSEL ===== */
+#projectsCarousel .carousel-control-prev-icon,
+#projectsCarousel .carousel-control-next-icon {
+    background-color: var(--navy);
+    border-radius: 50%;
+    padding: 1.2rem;
+}
+
+/* ===== PROJECT DETAIL INFO CARD ===== */
+.project-info-card {
+    background-color: var(--navy);
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+
+.project-info-card li strong {
+    color: var(--amber);
+}
+
+/* ===== CONTACT FORM ===== */
+.contact-form .form-control:focus {
+    border-color: var(--amber);
+    box-shadow: 0 0 0 0.2rem rgba(244, 168, 37, 0.25);
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: var(--navy);
+    color: #d9d9d9;
+}
+
+/* ===== BUTTONS ===== */
+.btn-warning {
+    background-color: var(--amber);
+    border-color: var(--amber);
+    color: var(--navy);
+}
+
+.btn-warning:hover {
+    background-color: #d98f14;
+    border-color: #d98f14;
+}
